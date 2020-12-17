@@ -1,0 +1,62 @@
+
+
+  <div class="jumbotron text-center">
+    <h1>How old are you now???</h1>
+    <p>Dont strain urself counting...! check below :p</p> 
+    <!-- Light mode
+    <label class="switch">
+      <input type="checkbox" checked onchange="darkMode()">
+      <span class="slider round"></span>
+    </label> Dark mode -->
+  </div>
+  <div class="box">
+  <div class="app-container" >
+    <mat-toolbar>
+      <span class="app-title">Age Calculator</span>
+    </mat-toolbar>
+
+  
+      <mat-form-field>
+        <mat-label>Enter Date of birth(mm/dd/yyyy)</mat-label>
+        <input matInput [matDatepicker]="dbpicker"  [(ngModel)]="birthdate" (ngModelChange)="onChangeBirth(birthdate)" [max]="today">
+        <mat-datepicker-toggle matSuffix [for]="dbpicker"></mat-datepicker-toggle>
+        <mat-datepicker #dbpicker></mat-datepicker>
+      </mat-form-field>
+
+      
+
+      <mat-form-field>
+        <mat-label>Age at the date of(mm/dd/yyyy)</mat-label>
+        <input matInput [matDatepicker]="picker" [(ngModel)]="currentdate" (ngModelChange)="onChangeCurrent(currentdate)" [min]="birthdate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      
+      
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-outline-info" (click)="calculateDays()"><h3>Days</h3></button>
+            <h1>{{totDays}}</h1>
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-outline-info" (click)="calculateHours()"><h3>Hours</h3></button>
+            <h1>{{totHours}}</h1>
+          </div>
+          <div class="col-sm-4">
+            <button type="button" class="btn btn-outline-info" (click)="calculateMinutes()"><h3>Minutes</h3></button>       
+            <h1>{{totMinutes}}</h1>
+          </div>
+        </div>
+        <div  *ngIf="result" class="result">
+          {{result}}
+         </div>
+        
+      </div> 
+
+    
+    
+  </div>
+</div>

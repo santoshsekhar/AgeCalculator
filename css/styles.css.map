@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEAA,AAAA,UAAU,AAAA,CACN,MAAM,CAAG,IAAI,CAChB,AACD,AAAA,YAAY,AAAC,CACZ,UAAU,CAAC,OAAO,CACf,KAAK,CAAC,IAAI,CACV,aAAa,CAAE,IAAI,CACtB,AACD,AAAA,cAAc,AAAA,CACV,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,mBAAmB,CAC3B,MAAM,CAAC,cAAc,CACrB,aAAa,CAAE,GAAG,CAClB,UAAU,CAAE,KAAM,CAClB,OAAO,CAAE,IAAI,CAChB,AACD,AAAA,eAAe,AAAC,CACf,KAAK,CAAE,GACR,CAAC,AACD,AAAA,OAAO,AAAA,CACH,UAAU,CAAC,OAAO,CAClB,KAAK,CAAC,IAAI,CACV,OAAO,CAAE,KAAK,CACd,UAAU,CAAE,MAChB,CAAC",
+    "sources": [
+        "../src/styles.scss",
+        "../src/app/app.component.scss",
+        "../src/app/age-calculator/age-calculator.component.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
